@@ -1,8 +1,8 @@
 # streamlit_app.py
 import streamlit as st
-from backend.ingest import extract_pages, pages_to_snippets, save_snippets
-from backend.embeddings_faiss import FaissIndex
-from backend.answer_engine import answer_question
+from ingest import extract_pages, pages_to_snippets, save_snippets
+from embeddings_faiss import FaissIndex
+from answer_engine import answer_question
 import os
 
 st.set_page_config(page_title='Bajaj AMC - Factsheet RAG Chatbot (Offline)', layout='wide')
